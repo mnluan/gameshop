@@ -361,4 +361,46 @@
   border-color: #54b3d6;
   color: #54b3d6;
 }
+
+@media only screen and (min-width: 765px){
+  .sliderALT{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 764px){
+  .slides input,
+  .manual-navigation,
+  .navigation-auto,
+  .slide, .slides, .slider{
+    display: none;
+  }
+
+  .islide{
+    width: 360px;
+    height: 200px;
+  }
+
+  .title{
+    font-size: 42px;
+  }
+
+  .sliderALT{
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+  }
+  .sliderALT img{
+    width: 100%;
+  }
+
+  .box img {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+}
+
 /* End Popular Section */
