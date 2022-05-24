@@ -361,7 +361,9 @@
   border-color: #54b3d6;
   color: #54b3d6;
 }
+/* End Popular Section */
 
+/* responsiveness */
 @media only screen and (min-width: 765px){
   .sliderALT{
     display: none;
@@ -403,4 +405,3 @@
 
 }
 
-/* End Popular Section */
