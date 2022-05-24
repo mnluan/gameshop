@@ -40,6 +40,7 @@
       </section>
 
       <section id="categories" class="categories">
+
         <div class="block2">
           <div class="box">
             <img src="./img/categories/rpg.jpg" alt="rpg">
@@ -55,7 +56,9 @@
             <img src="./img/categories/racing.jpg" alt="racing">
             <div class="subtitle">Racing</div>
           </div>
+        </div>
 
+        <div class="block3">
           <div class="box">
             <img src="./img/categories/indie.jpg" alt="indie">
             <div class="subtitle">Indie</div>
@@ -77,12 +80,12 @@
         <div class="slider">
 
           <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
+            <input type="radio" name="radio-btn" id="radio1" onclick="nextInfo()">
+            <input type="radio" name="radio-btn" id="radio2" onclick="nextInfo()">
+            <input type="radio" name="radio-btn" id="radio3" onclick="nextInfo()">
+            <input type="radio" name="radio-btn" id="radio4" onclick="nextInfo()">
+            <input type="radio" name="radio-btn" id="radio5" onclick="nextInfo()">
+            <input type="radio" name="radio-btn" id="radio6" onclick="nextInfo()">
 
             <div class="slide s1">
               <img src="./img/slides/1.jpg" alt="">
@@ -127,7 +130,17 @@
             <label for="radio5" class="manual-btn"></label>
             <label for="radio6" class="manual-btn"></label>
           </div>
-
+        </div>
+        <div class="islide">
+          <div class="igame">
+            <div class="title" id="title">
+            </div>
+          </div>
+          <div class="ibuttons">
+            <div id="price-slide"></div>
+            <button id="buy-slide">Buy Now</button>
+            <button id="cart-slide">Add to Cart</button>
+          </div>
         </div>
 
       </section>

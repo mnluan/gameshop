@@ -1,5 +1,6 @@
 :root{
     background-color: rgb(54, 54, 54);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Header Section */
@@ -29,7 +30,6 @@
     overflow: hidden;
     position: relative;
     display: inline-block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   a::before,
@@ -118,7 +118,7 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    width: 50%;
+    width: 80%;
     height: 30%;
   }
   .infobuttons button{
@@ -127,18 +127,14 @@
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
     border-color: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 20px;
+    margin-bottom: 2%;
+    padding: 3%;
+    font-size: 75%;
     border-radius: 5%;
     transition: 0.5s;
   }
 
-  #buy:hover{
-    border-color: #54b3d6;
-    color: #54b3d6;
-  }
-
+  #buy:hover,
   #cart:hover{
     border-color: #54b3d6;
     color: #54b3d6;
@@ -148,26 +144,29 @@
 
 
 /* Categories Section*/
-.block2{
+
+.block2,
+.block3{
   display: flex;
   flex-wrap:nowrap;
   gap: 1.5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
-
-.box{
+.categories{
   background-color: black;
+  border-radius: 10px;
+}
+.box{
   border-radius: 10px;
   border-width: 10px;
   color: whitesmoke;
   cursor: pointer;
   font-size: 3rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  width: 50%;
-  height: 30%;
+  width: 100%;
   transition: transform 0.5s; 
+  display: block;
 }
 
 .box:hover{
@@ -176,12 +175,14 @@
 }
 
 .box img {
-  width: 100%;
+  margin-top: 20px;
   border-radius: 10px;
+  width: 40%;
 }
 
 .box .subtitle{
   margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 /* End Categories Section*/
 
@@ -305,5 +306,59 @@
   background-color: #54b3d6;
 }
 
+.islide{
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 200px;
+  display: flex;
+}
 
+.igame{
+  width: 80%;
+  height: 100%;
+  color: white;
+}
 
+.title{
+  width: 100%;
+  height: 100%;
+  font-size: 70px;
+  text-align: center;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+.ibuttons{
+  color: white;
+  text-align: center;
+}
+
+.ibuttons button{
+  width: 80%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-color: white;
+  border-radius: 5%;
+  transition: 0.5s;
+  padding: 10px;
+}
+
+#price-slide{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 150%;
+}
+
+#buy-slide{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#buy-slide:hover,
+#cart-slide:hover{
+  border-color: #54b3d6;
+  color: #54b3d6;
+}
+/* End Popular Section */
