@@ -9,143 +9,170 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
+        <a href="#home" class="logo"><img src="./img/logo.png" alt="logo"></a>
         <div id="menu-bar"></div>
         <nav class="navbar">
           <a href="#home" data-replace="Home"><span>Home</span></a>
           <a href="#categories" data-replace="Categories"><span>Categories</span></a>
           <a href="#popular" data-replace="Popular"><span>Popular</span></a>
-          <a href="#f2p" data-replace="Free to Play"><span>Free to Play</span></a>
-          <a href="#faq" data-replace="FAQ"><span>FAQ</span></a>
-          <a href="#about" data-replace="About"><span>About</span></a>
+          <a class="cart-menu" href="#"><img src="./img/cart.png" alt="cart"> <div class="count" id="count"></div></a>
         </nav>
-      </header>
+    </header>
 
 
-      <section id="home" class="home">
-          <br>
-          <div class="block1">
-            <video autoplay muted loop>
-                <source src="./img/home/forza7.webm" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div class="infovideo">
-                <img src="./img/home/forzaMS7_logo.png" alt="Forza MotoSport 7">
-                <div class="infobuttons">
-                  <button id="buy">Buy Now</button>
-                  <button id="cart">Add to Cart</button>
-                </div>
-            </div>
+    <section id="home" class="home">
+        <br>
+        <div class="block1">
+          <video autoplay muted loop>
+              <source src="./img/home/forza7.webm" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="infovideo">
+              <img src="./img/home/forzaMS7_logo.png" alt="Forza MotoSport 7">
+              <div class="infobuttons">
+                <button id="buy">Buy Now</button>
+                <button id="cart">Add to Cart</button>
+              </div>
           </div>
-      </section>
+        </div>
+    </section>
 
-      <section id="categories" class="categories">
+    <section id="categories" class="categories">
 
-        <div class="block2">
-          <div class="box">
-            <img src="./img/categories/rpg.jpg" alt="rpg">
-            <div class="subtitle">RPG</div>
+      <div class="block2">
+        <div class="box">
+          <img src="./img/categories/rpg.jpg" alt="rpg">
+          <div class="subtitle">RPG</div>
+        </div>
+
+        <div class="box">
+          <img src="./img/categories/fps.jpg" alt="fps">
+          <div class="subtitle">FPS</div>
+        </div>
+        
+        <div class="box">
+          <img src="./img/categories/racing.jpg" alt="racing">
+          <div class="subtitle">Racing</div>
+        </div>
+      </div>
+
+      <div class="block3">
+        <div class="box">
+          <img src="./img/categories/indie.jpg" alt="indie">
+          <div class="subtitle">Indie</div>
+        </div>
+
+        <div class="box">
+          <img src="./img/categories/fight.jpg" alt="fight">
+          <div class="subtitle">Fight</div>
+        </div>
+
+        <div class="box">
+          <img src="./img/categories/strategy.jpg" alt="strategy">
+          <div class="subtitle">Strategy</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular" class="popular">
+      <div class="sliderALT" id="sliderALT">blabla</div>
+      <div class="slider">
+
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" onclick="nextInfo()">
+          <input type="radio" name="radio-btn" id="radio2" onclick="nextInfo()">
+          <input type="radio" name="radio-btn" id="radio3" onclick="nextInfo()">
+          <input type="radio" name="radio-btn" id="radio4" onclick="nextInfo()">
+          <input type="radio" name="radio-btn" id="radio5" onclick="nextInfo()">
+          <input type="radio" name="radio-btn" id="radio6" onclick="nextInfo()">
+
+          <div class="slide s1">
+            <img src="./img/slides/1.jpg" alt="Cyberpunk 2077">
           </div>
 
-          <div class="box">
-            <img src="./img/categories/fps.jpg" alt="fps">
-            <div class="subtitle">FPS</div>
+          <div class="slide">
+            <img src="./img/slides/2.jpg" alt="SIFU">
+          </div>
+
+          <div class="slide">
+            <img src="./img/slides/3.jpg" alt="The Elder Scrolls V: Skyrim">
+          </div>
+
+          <div class="slide">
+            <img src="./img/slides/4.jpg" alt="Elden Ring">
+          </div>
+
+          <div class="slide">
+            <img src="./img/slides/5.jpg" alt="EA Sports FIFA 22">
+          </div>
+
+          <div class="slide">
+            <img src="./img/slides/6.jpg" alt="HotWhells Unleashed">
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+            <div class="auto-btn6"></div>
           </div>
           
-          <div class="box">
-            <img src="./img/categories/racing.jpg" alt="racing">
-            <div class="subtitle">Racing</div>
-          </div>
         </div>
 
-        <div class="block3">
-          <div class="box">
-            <img src="./img/categories/indie.jpg" alt="indie">
-            <div class="subtitle">Indie</div>
-          </div>
-
-          <div class="box">
-            <img src="./img/categories/fight.jpg" alt="fight">
-            <div class="subtitle">Fight</div>
-          </div>
-
-          <div class="box">
-            <img src="./img/categories/strategy.jpg" alt="strategy">
-            <div class="subtitle">Strategy</div>
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+          <label for="radio6" class="manual-btn"></label>
+        </div>
+      </div>
+      <div class="islide">
+        <div class="igame">
+          <div class="title" id="title">
           </div>
         </div>
-      </section>
-
-      <section id="popular" class="popular">
-        <div class="sliderALT" id="sliderALT">blabla</div>
-        <div class="slider">
-
-          <div class="slides">
-            <input type="radio" name="radio-btn" id="radio1" onclick="nextInfo()">
-            <input type="radio" name="radio-btn" id="radio2" onclick="nextInfo()">
-            <input type="radio" name="radio-btn" id="radio3" onclick="nextInfo()">
-            <input type="radio" name="radio-btn" id="radio4" onclick="nextInfo()">
-            <input type="radio" name="radio-btn" id="radio5" onclick="nextInfo()">
-            <input type="radio" name="radio-btn" id="radio6" onclick="nextInfo()">
-
-            <div class="slide s1">
-              <img src="./img/slides/1.jpg" alt="Cyberpunk 2077">
-            </div>
-  
-            <div class="slide">
-              <img src="./img/slides/2.jpg" alt="SIFU">
-            </div>
-  
-            <div class="slide">
-              <img src="./img/slides/3.jpg" alt="The Elder Scrolls V: Skyrim">
-            </div>
-  
-            <div class="slide">
-              <img src="./img/slides/4.jpg" alt="Elden Ring">
-            </div>
-  
-            <div class="slide">
-              <img src="./img/slides/5.jpg" alt="EA Sports FIFA 22">
-            </div>
-  
-            <div class="slide">
-              <img src="./img/slides/6.jpg" alt="HotWhells Unleashed">
-            </div>
-
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-              <div class="auto-btn5"></div>
-              <div class="auto-btn6"></div>
-            </div>
-            
-          </div>
-
-          <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
-            <label for="radio6" class="manual-btn"></label>
-          </div>
+        <div class="ibuttons">
+          <div id="price-slide"></div>
+          <button id="buy-slide">Buy Now</button>
+          <button id="cart-slide">Add to Cart</button>
         </div>
-        <div class="islide">
-          <div class="igame">
-            <div class="title" id="title">
-            </div>
-          </div>
-          <div class="ibuttons">
-            <div id="price-slide"></div>
-            <button id="buy-slide">Buy Now</button>
-            <button id="cart-slide">Add to Cart</button>
-          </div>
+      </div>
+
+    </section>
+
+    <section class="more">
+      <button id="more"> See All Games</button>
+    </section>
+
+    <footer>
+      <div class="f-logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="f-info">This is a demo site only, there is no actual game sale available</div>
+      <div class="f-info"><h3>Developed by: Luan Nascimento</h3></div>
+      <div class="social-box">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/mnluan/" target="_blank"><img src="./img/social/linkedin.png" alt="linkedin"></a>
+          <div class="social-name"><a href="https://www.linkedin.com/in/mnluan/" target="_blank">LinkedIn</a></div>
         </div>
+        <div class="social">
+          <a href="https://github.com/mnluan" target="_blank"><img src="./img/social/github.png" alt="github"></a>
+          <div class="social-name"><a href="https://github.com/mnluan" target="_blank">Github</a></div>
+        </div>
+        <div class="social">
+          <a href="https://mnluan.github.io/portfolio/index.html" target="_blank"><img src="./img/social/portfolio.png" alt="portfolio"></a>
+          <div class="social-name"><a href="https://mnluan.github.io/portfolio/index.html" target="_blank">Portfolio</a></div>
+        </div>
+      </div>
+      <div class="rollback">
+        <button onclick="location.href='#home'"><b>^</b></button>
+      </div>
+    </footer>
 
-      </section>
-
-      <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
