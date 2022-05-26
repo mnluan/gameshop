@@ -6,37 +6,40 @@ setInterval( ()=>{
 }, 5000);
 
 function nextInfo(){
-
-    if(document.getElementById("radio1").checked){
-        document.getElementById('title').innerHTML = 'Cyberpunk <br>2077';
-        document.getElementById('price-slide').innerHTML = 'US$ 35,00';
-        document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/01.jpg">';
-    }
-    if(document.getElementById("radio2").checked){
-        document.getElementById('title').innerHTML = 'SIFU';
-        document.getElementById('price-slide').innerHTML = 'US$ 22,90';
-        document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/02.jpg">';
-    }
-    if(document.getElementById("radio3").checked){
-        document.getElementById('title').innerHTML = 'The Elder Scrolls V: Skyrim';
-        document.getElementById('price-slide').innerHTML = 'US$ 19,99';
-        document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/03.jpg">';
-    }
-    if(document.getElementById("radio4").checked){
-        document.getElementById('title').innerHTML = 'Elden Ring';
-        document.getElementById('price-slide').innerHTML = 'US$ 42,00';
-        document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/04.jpg">';
-    }
-    if(document.getElementById("radio5").checked){
-        document.getElementById('title').innerHTML = 'EA Sports <br>FIFA 22';
-        document.getElementById('price-slide').innerHTML = 'US$ 39,99';
-        document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/05.jpg">';
-    }
-    if(document.getElementById("radio6").checked){
-        document.getElementById('title').innerHTML = 'HOTWHEELS: Unleashed';
-        document.getElementById('price-slide').innerHTML = 'US$ 17,99';
-        document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/06.jpg">';
-    }
+    fetch(`https://mnluan.github.io/gameshop/db/games.json`)
+    .then((res) => res.json())
+    .then((data) => {
+        if(document.getElementById("radio1").checked){
+            document.getElementById('title').innerHTML = data[0].name;
+            document.getElementById('price-slide').innerHTML = 'US$ '+ data[0].price;
+            document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/01.jpg">';
+        }
+        if(document.getElementById("radio2").checked){
+            document.getElementById('title').innerHTML = data[2].name;
+            document.getElementById('price-slide').innerHTML = 'US$ ' + data[2].price;
+            document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/02.jpg">';
+        }
+        if(document.getElementById("radio3").checked){
+            document.getElementById('title').innerHTML = data[3].name;
+            document.getElementById('price-slide').innerHTML = 'US$ ' + data[3].price;
+            document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/03.jpg">';
+        }
+        if(document.getElementById("radio4").checked){
+            document.getElementById('title').innerHTML = data[4].name;
+            document.getElementById('price-slide').innerHTML = 'US$ ' + data[4].price;
+            document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/04.jpg">';
+        }
+        if(document.getElementById("radio5").checked){
+            document.getElementById('title').innerHTML = data[22].name;
+            document.getElementById('price-slide').innerHTML = 'US$ ' + data[22].price;
+            document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/05.jpg">';
+        }
+        if(document.getElementById("radio6").checked){
+            document.getElementById('title').innerHTML = data[5].name;
+            document.getElementById('price-slide').innerHTML = 'US$ ' + data[5].price;
+            document.getElementById("sliderALT").innerHTML = '<img src="./img/slides/06.jpg">';
+        }
+    })
 };
 
 function nextImage(){
