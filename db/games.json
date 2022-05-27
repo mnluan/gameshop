@@ -14,7 +14,7 @@
   "name": "The Witcher 3",
   "genre": "rpg",
   "price": 19.99,
-  "Image": "./db/img-db/628ec61413655ed865bcb92a.jpg",
+  "Image": "./db/img-db/628ec86713655ed865bcb92a.jpg",
   "description": "The Witcher 3: Wild Hunt is an action role-playing game with a third-person perspective. Players control Geralt of Rivia, a monster slayer known as a Witcher"
 },{
   "_id": {
@@ -23,7 +23,7 @@
   "name": "SIFU",
   "genre": "fight",
   "price": 29.99,
-  "Image": "./db/img-db/628ec61413655ed865bcb92b.jpg",
+  "Image": "./db/img-db/628ecaa813655ed865bcb92b.jpg",
   "description": "From Sloclap, creators of acclaimed PS4 fighting game Absolver, Sifu follows a young kung fu student on a path of revenge, hunting for the murderers of his family"
 },{
   "_id": {
@@ -32,7 +32,7 @@
   "name": "The Elder Scrolls V: Skyrim",
   "genre": "rpg",
   "price": 19.99,
-  "Image": "./db/img-db/628ec61413655ed865bcb92c.jpg",
+  "Image": "./db/img-db/628ecbbd13655ed865bcb92c.jpg",
   "description": "The Elder Scrolls V: Skyrim is an action role-playing game, playable from either a first or third-person perspective. The player may freely roam over the land of Skyrim—an open world environment consisting of wilderness expanses, dungeons, caves, cities, towns, fortresses, and villages"
 },{
   "_id": {
@@ -41,7 +41,7 @@
   "name": "Elden Ring",
   "genre": "rpg",
   "price": 39.99,
-  "Image": "./db/img-db/628ec61413655ed865bcb92d.jpg",
+  "Image": "./db/img-db/628ecc4d13655ed865bcb92d.jpg",
   "description": "Elden Ring is an action role-playing game played in a third-person perspective with gameplay focusing on combat and exploration; it features elements similar to those found in other games developed by FromSoftware, such as the Souls series, Bloodborne, and Sekiro"
 },{
   "_id": {
@@ -50,7 +50,7 @@
   "name": "Hot Wheels: Unleashed",
   "genre": "racing",
   "price": 17.99,
-  "Image": "./db/img-db/628ec61413655ed865bcb92e.jpg",
+  "Image": "./db/img-db/628eccc713655ed865bcb92e.jpg",
   "description": "Hot Wheels Unleashed is a racing game played from a third-person perspective. In the game, the player assumes control of vehicles from the Hot Wheels franchise, and raced against other opponents in miniature tracks set in various everyday locations and environments such garage, kitchen and bedroom"
 },{
   "_id": {
@@ -59,7 +59,7 @@
   "name": "Forza Motosport 7",
   "genre": "racing",
   "price": 25.99,
-  "Image": "./db/img-db/628ec61413655ed865bcb92f.jpg",
+  "Image": "./db/img-db/628ecd5713655ed865bcb92f.jpg",
   "description": "Forza Motorsport 7 is a racing video game featuring over 700 cars—including new Forza Edition cars, most of which have been brought over from Forza Horizon 3 and more than 200 different configurations to race on across 32 locations at launch, including all from Forza Motorsport 6"
 },{
   "_id": {
@@ -203,6 +203,6 @@
   "name": "EA Sports FIFA 22",
   "genre": "Strategy",
   "price": 19.99,
-  "Image": "./db/img-db/628ecd5713655ed865bcb93e.jpg",
+  "Image": "./db/img-db/628ecd5713655ed865bcb93f.jpg",
   "description": "Battlefield 5 is a celebration of the chaos and the drama of combined arms warfare. At its core is the concept of the squad, a small group of players that can cooperate and coordinate together to achieve goals in-game"
 }]
