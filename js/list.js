@@ -4,8 +4,8 @@ fetch(`https://mnluan.github.io/gameshop/db/games.json`)
 .then((data) => {
     for (i = 0; i < data.length; i++){
         document.getElementById('list-all').innerHTML += '<div class="game-item">' + 
-        '<img class="logo" src='+ data[i] + '>' +
-        '<div class="title">' + data[i].Image; +
+        '<img class="logo" src='+ data[i].Image + '>' +
+        '<div class="title">' + data[i].name +
         '</div>'
     }
     }
