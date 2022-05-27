@@ -179,11 +179,21 @@ body{
   background-image: url("../img/categories/P7gn.gif");
   border-radius: 10px;
 }
+.categories a{
+  border-radius: 10px;
+  border-width: 10px;
+  cursor: pointer;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%; 
+  display: block;
+  text-decoration-line: none;
+}
+
 .box{
   border-radius: 10px;
   border-width: 10px;
   color: whitesmoke;
-  cursor: pointer;
   font-size: 3rem;
   text-align: center;
   width: 100%;

@@ -113,7 +113,7 @@
   "name": "F1 - 2022",
   "genre": "racing",
   "price": 19.99,
-  "Image": "../db/img-db/628ecd5713655ed865bcb935.jpg",
+  "Image": "./db/img-db/628ecd5713655ed865bcb935.jpg",
   "description": "F1® 22 also includes VR compatibility on PC via Oculus Rift and HTC Vive to give you the ultimate immersive F1® experience. Get a taste of the glitz and glamor of Formula 1® in F1® Life, a new space for you to unlock and show off supercars, clothing, accessories, and more for the world to see"
 },{
   "_id": {
@@ -140,7 +140,7 @@
   "name": "Super Meat Boy",
   "genre": "indie",
   "price": 2.99,
-  "Image": "../db/img-db/628ecd5713655ed865bcb938.jpg",
+  "Image": "./db/img-db/628ecd5713655ed865bcb938.jpg",
   "description": "Super Meat Boy is a tough as nails platformer where you play as an animated cube of meat who's trying to save his girlfriend (who happens to be made of bandages) from an evil fetus in a jar wearing a tux. Our meaty hero will leap from walls, over seas of buzz saws, through crumbling caves and pools of old needles"
 },{
   "_id": {
@@ -204,5 +204,5 @@
   "genre": "Strategy",
   "price": 19.99,
   "Image": "./db/img-db/628ecd5713655ed865bcb93f.jpg",
-  "description": "Battlefield 5 is a celebration of the chaos and the drama of combined arms warfare. At its core is the concept of the squad, a small group of players that can cooperate and coordinate together to achieve goals in-game"
+  "description": "FIFA 22 introduces 'HyperMotion Technology', which uses motion capture data collected from 22 real-life players playing a complete, high-intensity football match in motion capture suits"
 }]
