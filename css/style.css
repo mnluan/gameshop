@@ -490,6 +490,42 @@ footer a:hover{
 
 /* End Footer */
 
+/* All Games page */
+
+.list-all{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.list-all .logo {
+  width: 144px;
+  border-radius: 10px;
+}
+
+.game-item{
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.game-item:hover{
+  background-color: #54b3d6;
+}
+
+.game-item .title{
+  font-size: 50px;
+}
+
+/* End All Games page */
+
 /* responsiveness */
 @media only screen and (max-width: 1024px){
   .social .social-name{
@@ -545,3 +581,32 @@ footer a:hover{
 
 }
 
+@media only screen and (max-width: 1024px){
+  .list-all{
+    width: 100%;
+  }
+  
+  .list-all .logo{
+    width: 64px;
+    border-radius: 5px;
+  }
+
+  .game-item{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .game-item:hover{
+    background-color: #54b3d6;
+  }
+  
+  .game-item .title{
+    font-size: 22px;
+  }
+}
