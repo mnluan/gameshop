@@ -1,4 +1,5 @@
-const rollback = `<div class="rollback"><button onclick="location.href='#home'"><b>^</b></button></div>`
+const rollback = `<div class="rollback"><button onclick="location.href='#home'"><b>^</b></button></div>`;
+
 function createFooter(){
     document.getElementById('footer').innerHTML = '' + 
     '<footer> ' + 
