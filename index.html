@@ -9,7 +9,13 @@
 </head>
 <body>
     <header>
-        <a href="#home" class="logo"><img src="./img/logo.png" alt="logo"></a>
+      <a href="#home" class="logo"><img src="./img/logo.png" alt="logo"></a>
+      <div id="homebar">
+        <form>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <input type="search" id="searchbar" placeholder="Search...">
+        </form>
+      </div>
         <div id="menu-bar"></div>
         <nav class="navbar">
           <a href="#home" data-replace="Home"><span>Home</span></a>
@@ -164,6 +170,7 @@
 
     <div id="footer"></div>
 
+    <script src="./js/search.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/script.js"></script>
 </body>
