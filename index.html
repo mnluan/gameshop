@@ -13,7 +13,7 @@
       <div id="homebar">
         <form>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-          <input type="search" id="searchbar" placeholder="Search...">
+          <input type="search" id="searchbar" placeholder="Search..." onkeydown="autoSearch()">
         </form>
       </div>
         <div id="menu-bar"></div>
@@ -25,7 +25,13 @@
         </nav>
     </header>
 
-
+    <section class="search_result" id="search_result">
+      <button onclick="closebtn()"><b>X</b></button>
+      <div id="result">
+        <span></span><br>
+      </div>
+    </section>
+    
     <section id="home" class="home">
         <br>
         <div class="block1">
