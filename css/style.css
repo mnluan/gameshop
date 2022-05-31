@@ -48,7 +48,7 @@ body{
   #homebar form input[type=search] {
     border: solid 3px #050b18;
     box-sizing: border-box;
-    font-size: 1.5em;
+    font-size: 1.2em;
     height: 2em;
     width: 100%;
     outline: solid #050b18 0;
@@ -64,22 +64,6 @@ body{
     border: solid 3px #09f;
     outline: solid #071024d2  2000px;
     background-color: rgba(22, 7, 41, 0.548);
-  }
-
-  #homebar button{
-    background-color: rgba(32, 32, 32, 0.548);
-    border: solid 3px #050b18;
-    border-radius: 100px;
-    display: block;
-    left: 77%;
-    position: absolute;
-    top: 10%;
-    cursor: pointer;
-    transition: 1s;
-  }
-
-  #homebar button img{
-    width: 36px;
   }
 
   #homebar button:hover{
@@ -602,6 +586,11 @@ footer a:hover{
   }
 }
 
+@media only screen and (max-width: 413px){
+  #homebar{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 940px){
   .slides input,
