@@ -620,6 +620,18 @@ footer a:hover{
 
 /* End All Games page */
 
+/* Game Page */
+
+.game-inf{
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+/* End Game Page */
+
 /* responsiveness */
 @media only screen and (max-width: 1024px){
   .social .social-name{
