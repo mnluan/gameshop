@@ -22,7 +22,7 @@ function autoSearch(){
             document.getElementById('result').innerHTML = "";
             var url = data[i]._id.$oid;
             list += data[i].name;
-            document.getElementById('result').innerHTML += '<div><a href="https://mnluan.github.io/gameshop/game/' + url + '" target="_blank">'+ data[i].name +'</a></div>';
+            document.getElementById('result').innerHTML += '<div><a href="https://mnluan.github.io/gameshop/game/' + url + '.html" target="_blank">'+ data[i].name +'</a></div>';
           }
         }
       });
