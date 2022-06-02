@@ -240,8 +240,8 @@ body{
     transition: 0.5s;
   }
 
-  #buy:hover,
-  #cart:hover{
+  #buy_prin:hover,
+  #cart_prin:hover{
     border-color: #54b3d6;
     color: #54b3d6;
   }
@@ -599,7 +599,7 @@ footer a:hover{
   border-radius: 10px;
 }
 
-.game-item{
+.game-item, .game-item a{
   background-color: black;
   color: white;
   width: 100%;
@@ -607,7 +607,20 @@ footer a:hover{
   flex-wrap: nowrap;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
   transition: 1s;
+}
+
+.title{
+  transition: 1s;
+}
+
+.title a:visited{
+  color: white;
+}
+.title:hover{
+  border-color: #54b3d6;
+  color: #54b3d6;
 }
 
 .game-item:hover{
@@ -622,12 +635,63 @@ footer a:hover{
 
 /* Game Page */
 
-.game-inf{
+/*Game*/
+#game-inf, #game-sub{
   margin-top: 10rem;
   margin-bottom: 10rem;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
+}
+
+#game-inf{
+  display:flex
+}
+
+#game_descr{
+  text-align: justify;
+  padding: 25px;
+}
+
+#game_name{
+  font-size: 48px;
+  text-align: center;
+  padding: 25px;
+}
+
+#game_img img{
+  width: 240px;
+  border-radius: 10px;
+}
+
+#game_head{
+  text-align: center;
+  font-size: 18px;
+}
+#btns{
+  padding: 10px;
+}
+#buy, #cart{
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  transition: 1s;
+}
+
+#others{
+  padding: 10px;
+  font-size: 20px;
+}
+
+#game-sub img{
+  width: 120px;
+  border-radius: 10px;
 }
 
 /* End Game Page */
@@ -690,6 +754,10 @@ footer a:hover{
     display: none;
   }
 
+  #game-inf, #game-sub{
+    width: 100%;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 1024px){

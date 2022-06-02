@@ -17,25 +17,27 @@ function showinfo(){
         for (i = 0; i < data.length; i++){
             if(data[i]._id.$oid ==  url ){
                 document.getElementById('game-inf').innerHTML = '' +
-                '<div id="game-head">'+
-                    '<div id="game_genre"><img src=".' + data[i].Image + '" alt="'+ data[i].name  +'"></div>' +
-                    '<div id="game_genre">' + data[i].genre + '</div>' +
+                '<div id="game_head">'+
+                    '<div id="game_img"><img src=".' + data[i].Image + '" alt="'+ data[i].name  +'"></div>' +
+                    '<div id="game_genre">' + data[i].genre.toUpperCase() + '</div>' +
                     '<div id="game_price">' + data[i].price + '</div>' +
                     '<div id="btns">' + 
-                        '<button id="buy">Buy</button>' +
+                        '<button id="buy">Buy Now</button><br>' +
                         '<button id="cart">Add to Cart</button>' +
                     '</div>'+
                 '</div>' +
                 '<div id="pagebody">'+
-                    '<div id="game_name">' + data[i].name + '</div>' +
+                    '<div id="game_name">' + data[i].name.toUpperCase() + '</div>' +
                     '<div id="game_descr">' + data[i].description + '</div>'+
-                '<div>'
+                '<div>';
+                document.getElementById('game-sub').innerHTML = '<div id="others">• Other games like this: </div>';
                 for (j = 0; j < data.length; j++){
                     if((data[i].genre == data[j].genre) && (data[i]._id.$oid != data[j]._id.$oid)){
-                    document.getElementById('game-sub').innerHTML += '<div class="game-item">' + 
+                    document.getElementById('game-sub').innerHTML += '' +
+                    '<a href="https://mnluan.github.io/gameshop/' + data[j]._id.$oid +'.html"><div class="game-item">' + 
                     '<img class="logo" src=".'+ data[j].Image + '">' +
-                    '<div class="title">' + data[j].name +
-                    '</div></div><br>'
+                    '<div class="title">' + data[j].name +'</div></a>'+
+                    '</div><br>';
                     }
                 }
             }

@@ -26,10 +26,10 @@ fetch(`https://mnluan.github.io/gameshop/db/games.json`)
 
     for (i = 0; i < data.length; i++){
         if((url == "https://mnluan.github.io/gameshop/fps.html") && (data[i].genre == "FPS")){
-        document.getElementById('list-all').innerHTML += '<div class="game-item">' + 
-        '<img class="logo" src='+ data[i].Image + '>' +
-        '<div class="title">' + data[i].name +
-        '</div></div><br>'
+            '<a href="https://mnluan.github.io/gameshop/' + data[i]._id.$oid +'.html"><div class="game-item">' + 
+            '<img class="logo" src=".'+ data[i].Image + '">' +
+            '<div class="title">' + data[i].name +'</div></a>'+
+            '</div><br>';
         }
     }
 
@@ -69,8 +69,7 @@ fetch(`https://mnluan.github.io/gameshop/db/games.json`)
         }
     }
 
-    }
-    )
+    });
 };
 
 listgames();
