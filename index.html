@@ -52,44 +52,44 @@
 
       <div class="block2">
         
-        <a href="rpg.html">
+        <a href="games.html?category=rpg">
           <div class="box">
             <img src="./img/categories/rpg.jpg" alt="rpg">
             <div class="subtitle">RPG</div>
           </div>
         </a>
         
-        <a href="fps.html">
+        <a href="games.html?category=FPS">
           <div class="box">
             <img src="./img/categories/fps.jpg" alt="fps">
             <div class="subtitle">FPS</div>
           </div>
         </a>
         
-        <a href="racing.html">
+        <a href="games.html?category=simulation">
           <div class="box">
             <img src="./img/categories/racing.jpg" alt="racing">
-            <div class="subtitle">Racing</div>
+            <div class="subtitle">Simulation</div>
           </div>
         </a>
       </div>
 
       <div class="block3">
-        <a href="indie.html">
+        <a href="games.html?category=indie">
           <div class="box">
             <img src="./img/categories/indie.jpg" alt="indie">
             <div class="subtitle">Indie</div>
           </div>
         </a>
         
-        <a href="fight.html">
+        <a href="games.html?category=fight">
           <div class="box">
             <img src="./img/categories/fight.jpg" alt="fight">
             <div class="subtitle">Fight</div>
           </div>
         </a>
 
-        <a href="strategy.html">
+        <a href="games.html?category=strategy">
           <div class="box">
             <img src="./img/categories/strategy.jpg" alt="strategy">
             <div class="subtitle">Strategy</div>
@@ -100,7 +100,7 @@
     </section>
 
     <section id="popular" class="popular">
-      <div class="sliderALT" id="sliderALT">blabla</div>
+      <div class="sliderALT" id="sliderALT"></div>
       <div class="slider">
 
         <div class="slides">
@@ -170,7 +170,9 @@
     </section>
 
     <section class="more">
-      <form action="./all.html"><button id="more"> See All Games</button></form>
+      <form action="./games.html" method="get">
+        <button id="more" type="submit" name="category" value="all"> See All Games</button>
+      </form>
     </section>
 
     <div id="footer"></div>

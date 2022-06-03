@@ -1,4 +1,5 @@
-var url = window.location.href;
+let params = new URLSearchParams(location.search);
+var nameURL = params.get('category');
 
 function createHTML(i, d){
     document.getElementById('list-all').innerHTML += '' + 
@@ -12,57 +13,17 @@ function listgames(){
 fetch(`https://mnluan.github.io/gameshop/db/games.json`)
 .then((res) => res.json())
 .then((data) => {
-    if(url == "https://mnluan.github.io/gameshop/all.html" || url == "https://mnluan.github.io/gameshop/all.html?"){
+    if(nameURL == "all"){
         for (i = 0; i < data.length; i++){
             createHTML(i, data);
+            console.log("all");
         }
     }
     
-    for (i = 0; i < data.length; i++){
-        if((url == "https://mnluan.github.io/gameshop/rpg.html") && (data[i].genre == "rpg")){
-            for (i = 0; i < data.length; i++){
-                createHTML(i, data);
-            }
-        }
-    }
-
-    for (i = 0; i < data.length; i++){
-        if((url == "https://mnluan.github.io/gameshop/fps.html") && (data[i].genre == "FPS")){
-            for (i = 0; i < data.length; i++){
-                createHTML(i, data);
-            }
-        }
-    }
-
-    for (i = 0; i < data.length; i++){
-        if((url == "https://mnluan.github.io/gameshop/racing.html") && (data[i].genre == "racing")){
-            for (i = 0; i < data.length; i++){
-                createHTML(i, data);
-            }
-        }
-    }
-
-    for (i = 0; i < data.length; i++){
-        if((url == "https://mnluan.github.io/gameshop/indie.html") && (data[i].genre == "indie")){
-            for (i = 0; i < data.length; i++){
-                createHTML(i, data);
-            }
-        }
-    }
-
-    for (i = 0; i < data.length; i++){
-        if((url == "https://mnluan.github.io/gameshop/fight.html") && (data[i].genre == "fight")){
-            for (i = 0; i < data.length; i++){
-                createHTML(i, data);
-            }
-        }
-    }
-
-    for (i = 0; i < data.length; i++){
-        if((url == "https://mnluan.github.io/gameshop/strategy.html") && (data[i].genre == "strategy")){
-            for (i = 0; i < data.length; i++){
-                createHTML(i, data);
-            }
+    for (j = 0; j < data.length; j++){
+        if(nameURL == data[j].genre){
+            createHTML(j, data);
+            console.log(nameURL);
         }
     }
 

@@ -48,7 +48,7 @@
     "$oid": "628eccc713655ed865bcb92e"
   },
   "name": "Hot Wheels: Unleashed",
-  "genre": "racing",
+  "genre": "simulation",
   "price": 17.99,
   "Image": "./db/img-db/628eccc713655ed865bcb92e.jpg",
   "description": "Hot Wheels Unleashed is a racing game played from a third-person perspective. In the game, the player assumes control of vehicles from the Hot Wheels franchise, and raced against other opponents in miniature tracks set in various everyday locations and environments such garage, kitchen and bedroom"
@@ -57,7 +57,7 @@
     "$oid": "628ecd5713655ed865bcb92f"
   },
   "name": "Forza Motosport 7",
-  "genre": "racing",
+  "genre": "simulation",
   "price": 25.99,
   "Image": "./db/img-db/628ecd5713655ed865bcb92f.jpg",
   "description": "Forza Motorsport 7 is a racing video game featuring over 700 cars—including new Forza Edition cars, most of which have been brought over from Forza Horizon 3 and more than 200 different configurations to race on across 32 locations at launch, including all from Forza Motorsport 6"
@@ -111,7 +111,7 @@
     "$oid": "628ecd5713655ed865bcb935"
   },
   "name": "F1 - 2022",
-  "genre": "racing",
+  "genre": "simulation",
   "price": 19.99,
   "Image": "./db/img-db/628ecd5713655ed865bcb935.jpg",
   "description": "F1® 22 also includes VR compatibility on PC via Oculus Rift and HTC Vive to give you the ultimate immersive F1® experience. Get a taste of the glitz and glamor of Formula 1® in F1® Life, a new space for you to unlock and show off supercars, clothing, accessories, and more for the world to see"
@@ -120,7 +120,7 @@
     "$oid": "628ecd5713655ed865bcb936"
   },
   "name": "Dirt Rally 2.0",
-  "genre": "racing",
+  "genre": "simulation",
   "price": 12.99,
   "Image": "./db/img-db/628ecd5713655ed865bcb936.jpg",
   "description": "DiRT Rally 2.0 dares you to take on the challenge in the most powerful off-road vehicles ever made. Carve your way through a selection of iconic rally locations from across the globe, knowing that the smallest mistake could end your stage"
@@ -201,8 +201,28 @@
     "$oid": "628ecd5713655ed865bcb93f"
   },
   "name": "EA Sports FIFA 22",
-  "genre": "strategy",
+  "genre": "simulation",
   "price": 19.99,
   "Image": "./db/img-db/628ecd5713655ed865bcb93f.jpg",
   "description": "FIFA 22 introduces 'HyperMotion Technology', which uses motion capture data collected from 22 real-life players playing a complete, high-intensity football match in motion capture suits"
+},{
+  "_id": {
+    "$oid": "628ecd5713655ed865bcb940"
+  },
+  "name": "eFootball™ PES 2022",
+  "genre": "simulation",
+  "price": 12.00,
+  "Image": "./db/img-db/628ecd5713655ed865bcb940.jpg",
+  "description": "eFootball, formerly known as Pro Evolution Soccer (PES) internationally and Winning Eleven in Japan and North America, is a series of association football simulation video games developed and published by Konami since 1995"
+},{
+
+},{
+  "_id": {
+    "$oid": "628ecd5713655ed865bcb941"
+  },
+  "name": "NBA 2K22",
+  "genre": "simulation",
+  "price": 16.00,
+  "Image": "./db/img-db/628ecd5713655ed865bcb941.jpg",
+  "description": "NBA 2K22 puts the entire basketball universe in your hands. Play now in real NBA and WNBA environments against authentic teams and players. Build your own dream team in MyTEAM with today's stars and yesterday's legends. Live out your own pro journey in MyCAREER and experience your personal rise to the NBA"
 }]
