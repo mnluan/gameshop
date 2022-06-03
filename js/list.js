@@ -3,7 +3,7 @@ var nameURL = params.get('category');
 
 function createHTML(i, d){
     document.getElementById('list-all').innerHTML += '' + 
-    '<a href="./game/' + d[i]._id.$oid +'.html"><div class="game-item">' + 
+    '<a href="./game/app.html?id=' + d[i]._id.$oid +'"><div class="game-item">' + 
     '<img class="logo" src="'+ d[i].Image + '">' +
     '<div class="title">' + d[i].name +'</div></a>'+
     '</div><br>';

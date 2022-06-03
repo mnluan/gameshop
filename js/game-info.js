@@ -1,21 +1,12 @@
 function showinfo(){
-    var url = window.location.href;
-
-    const index0 = url.lastIndexOf('/');
-    const after = url.slice(index0+1);
-    url = after;
-
-    const index1 = url.lastIndexOf('.');
-    const before = url.slice(0, index1);
-    url = before;
-
-    console.log(url);
+    let params = new URLSearchParams(location.search);
+    var idgame = params.get('id');
 
     fetch(`https://mnluan.github.io/gameshop/db/games.json`)
     .then((res) => res.json())
     .then((data) => {
         for (i = 0; i < data.length; i++){
-            if(data[i]._id.$oid ==  url ){
+            if(data[i]._id.$oid ==  idgame){
                 document.getElementById('game-inf').innerHTML = '' +
                 '<div id="game_head">'+
                     '<div id="game_img"><img src=".' + data[i].Image + '" alt="'+ data[i].name  +'"></div>' +
@@ -34,7 +25,7 @@ function showinfo(){
                 for (j = 0; j < data.length; j++){
                     if((data[i].genre == data[j].genre) && (data[i]._id.$oid != data[j]._id.$oid)){
                     document.getElementById('game-sub').innerHTML += '' +
-                    '<a href="./' + data[j]._id.$oid +'.html"><div class="game-item">' + 
+                    '<a href="./app.html?id=' + data[j]._id.$oid +'"><div class="game-item">' + 
                     '<img class="logo" src=".'+ data[j].Image + '">' +
                     '<div class="title">' + data[j].name +'</div></a>'+
                     '</div><br>';
