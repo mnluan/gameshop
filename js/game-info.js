@@ -34,7 +34,7 @@ function showinfo(){
                 for (j = 0; j < data.length; j++){
                     if((data[i].genre == data[j].genre) && (data[i]._id.$oid != data[j]._id.$oid)){
                     document.getElementById('game-sub').innerHTML += '' +
-                    '<a href="https://mnluan.github.io/gameshop/' + data[j]._id.$oid +'.html"><div class="game-item">' + 
+                    '<a href="./' + data[j]._id.$oid +'.html"><div class="game-item">' + 
                     '<img class="logo" src=".'+ data[j].Image + '">' +
                     '<div class="title">' + data[j].name +'</div></a>'+
                     '</div><br>';
