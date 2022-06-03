@@ -201,7 +201,7 @@
     "$oid": "628ecd5713655ed865bcb93f"
   },
   "name": "EA Sports FIFA 22",
-  "genre": "Strategy",
+  "genre": "strategy",
   "price": 19.99,
   "Image": "./db/img-db/628ecd5713655ed865bcb93f.jpg",
   "description": "FIFA 22 introduces 'HyperMotion Technology', which uses motion capture data collected from 22 real-life players playing a complete, high-intensity football match in motion capture suits"
