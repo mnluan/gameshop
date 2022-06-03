@@ -20,7 +20,7 @@ function showinfo(){
                 '<div id="game_head">'+
                     '<div id="game_img"><img src=".' + data[i].Image + '" alt="'+ data[i].name  +'"></div>' +
                     '<div id="game_genre">' + data[i].genre.toUpperCase() + '</div>' +
-                    '<div id="game_price">' + data[i].price + '</div>' +
+                    '<div id="game_price">"US$ "' + data[i].price + '</div>' +
                     '<div id="btns">' + 
                         '<button id="buy">Buy Now</button><br>' +
                         '<button id="cart">Add to Cart</button>' +
