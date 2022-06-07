@@ -706,6 +706,10 @@ footer a:hover{
 
 fieldset{
   border: none;
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
 }
 
 #paybox h3{
@@ -716,6 +720,30 @@ fieldset{
   width: 50%;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+[type=radio]{
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  background-clip: content-box;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 50%;
+  transition: .7s;
+}
+
+[type=radio]:hover{
+  border: 2px solid #54b3d6;
+}
+
+input[type="radio"]:checked {
+  background-color: #54b3d6;
 }
 
 [type=radio] + img{
@@ -731,12 +759,32 @@ input[type=submit] {
   margin: 4px 2px;
   border-radius: 10px;
   cursor: pointer;
+  transition: 1s;
 }
 
+input[type=submit]:hover{
+  color: #54b3d6;
+  background-color: white;
+}
 .pay{
   color: white;
 }
 
+#gameshow{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.cover img{
+  width: 90px;
+  border-radius: 5px;
+}
+.order-game-name, 
+.order-game-price{
+  color: white;
+  padding: 10px;
+}
 /*End Payment*/
 /* responsiveness */
 @media only screen and (max-width: 1024px){

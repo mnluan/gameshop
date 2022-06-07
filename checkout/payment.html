@@ -17,17 +17,36 @@
         <div id="items-info" class="items-info">
           <h3>Your Order: </h3>
           <div id="gameshow">
-            
+            <div class="cover">
+              <div class="order-game-img"> <img src="../db/img-db/628ec61413655ed865bcb929.jpg" alt="Cyberpunk 2077"> </div>
+            </div>
+            <div class="order-info">
+              <div class="order-game-name"> Cyberpunk 2077 </div>
+              <div class="order-game-price"> US$ 29.99 </div>
+            </div>
+          </div>
+          <div id="gameshow">
+            <div class="cover">
+              <div class="order-game-img"> <img src="../db/img-db//628ec86713655ed865bcb92a.jpg" alt="The Witcher 3"> </div>
+            </div>
+            <div class="order-info">
+              <div class="order-game-name"> The Witcher 3 </div>
+              <div class="order-game-price"> US$ 19.99 </div>
+            </div>
           </div>
         </div>
         <div id="pay" class="pay">
           <form action = "." method = "POST">
             <fieldset>
-                <label for = "credit card"> <input type = "radio" name = "pay" id = "credit" value = "c" required checked="checked"> <img src="./card-credit.png"> Credit card </label><br>
-                <label for = "debit"><input type = "radio" name = "pay" id = "debt" value = "d" required><img src="./card-debit.png"> Debit card</label><br>
-                <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required> <img src="./ewallet.png"> e-Wallet</label><br>
+                <div class="paybuttons">
+                  <label for = "credit card"> <input type = "radio" name = "pay" id = "credit" value = "c" required checked="checked">  <img src="./card-credit.png"> Credit card </label><br><br>
+                  <label for = "debit"><input type = "radio" name = "pay" id = "debt" value = "d" required>  <img src="./card-debit.png"> Debit card</label><br><br>
+                  <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required>  <img src="./ewallet.png"> e-Wallet</label><br><br>
+                </div>
                 <br>
-                <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW">
+                <div class="ordernow">
+                  US$ 000.00 <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW">
+                </div>
                 <br>
 
             </fieldset>
