@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Game Shop</title>
+</head>
+  <body>
+    <div id="header"></div>
+    <section id="home" class="home"></section>
+    
+    <section id="payment" class="payment">
+
+      <div id="paybox">
+        <div id="items-info" class="items-info">
+          <h3>Your Order: </h3>
+          <div id="gameshow">
+            
+          </div>
+        </div>
+        <div id="pay" class="pay">
+          <form action = "." method = "POST">
+            <fieldset>
+                <label for = "credit card"> <input type = "radio" name = "pay" id = "credit" value = "c" required checked="checked"> <img src="./card-credit.png"> Credit card </label><br>
+                <label for = "debit"><input type = "radio" name = "pay" id = "debt" value = "d" required><img src="./card-debit.png"> Debit card</label><br>
+                <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required> <img src="./ewallet.png"> e-Wallet</label><br>
+                <br>
+                <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW">
+                <br>
+
+            </fieldset>
+        </form>
+        </div>
+      </div>
+      
+    </section>
+
+    <div id="footer"></div>
+    
+    <script src="../js/search.js"></script>
+    <script src="../js/game-header.js"></script>
+    <script src="../js/game-footer.js"></script>
+    <script src="../js/game-info.js"></script>
+  </body>
+</html>
+
+<!-- cart.splice(3,1) apaga do vetor cart o item de indice 3 (somente ele!) -->

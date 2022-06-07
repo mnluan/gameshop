@@ -696,6 +696,48 @@ footer a:hover{
 
 /* End Game Page */
 
+/*Payment*/
+#paybox{
+  padding: 20px;
+  margin-top: 130px;
+  display: flex;
+  flex-direction:row
+}
+
+fieldset{
+  border: none;
+}
+
+#paybox h3{
+  color: white;
+}
+
+.items-info, .pay{
+  width: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+[type=radio] + img{
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color: #54b3d6;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pay{
+  color: white;
+}
+
+/*End Payment*/
 /* responsiveness */
 @media only screen and (max-width: 1024px){
   .social .social-name{
