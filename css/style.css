@@ -774,6 +774,11 @@ input[type=submit]:hover{
   display: flex;
   flex-direction: row;
   padding: 10px;
+  border-radius: 10px;
+  transition: .8s;
+}
+#gameshow:hover{
+  background-color: #54b3d6;
 }
 
 .cover img{
@@ -785,6 +790,34 @@ input[type=submit]:hover{
   color: white;
   padding: 10px;
 }
+.cardinfo{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+#cardnumber, #cardname{
+  width: 300px;
+}
+#carddate, #securecard{
+  width: 70px;
+}
+#cardflag, #cardnumber, #cardname, #carddate, #securecard, #email{
+  padding: 10px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #54b3d6;
+  outline: none;
+  color: #54b3d6;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.cardinfo2{
+  display: flex;
+  flex-direction: row;
+}
+
 /*End Payment*/
 /* responsiveness */
 @media only screen and (max-width: 1024px){
@@ -877,5 +910,9 @@ input[type=submit]:hover{
   
   .game-item .title{
     font-size: 22px;
+  }
+
+  #paybox{
+    display:block;
   }
 }

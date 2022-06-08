@@ -13,7 +13,7 @@ function showinfo(){
                     '<div id="game_genre">' + data[i].genre.toUpperCase() + '</div>' +
                     '<div id="game_price">US$ ' + data[i].price + '</div>' +
                     '<div id="btns">' + 
-                        '<button id="buy">Buy Now</button><br>' +
+                        '<button id="buy" onclick="location.href=`../checkout/payment.html?id='+data[i]._id.$oid+'`">Buy Now</button><br>' +
                         '<button id="cart">Add to Cart</button>' +
                     '</div>'+
                 '</div>' +

@@ -16,48 +16,31 @@
       <div id="paybox">
         <div id="items-info" class="items-info">
           <h3>Your Order: </h3>
-          <div id="gameshow">
-            <div class="cover">
-              <div class="order-game-img"> <img src="../db/img-db/628ec61413655ed865bcb929.jpg" alt="Cyberpunk 2077"> </div>
-            </div>
-            <div class="order-info">
-              <div class="order-game-name"> Cyberpunk 2077 </div>
-              <div class="order-game-price"> US$ 29.99 </div>
-            </div>
-          </div>
-          <div id="gameshow">
-            <div class="cover">
-              <div class="order-game-img"> <img src="../db/img-db//628ec86713655ed865bcb92a.jpg" alt="The Witcher 3"> </div>
-            </div>
-            <div class="order-info">
-              <div class="order-game-name"> The Witcher 3 </div>
-              <div class="order-game-price"> US$ 19.99 </div>
-            </div>
-          </div>
+          <div id="listofgames"></div>  
         </div>
         <div id="pay" class="pay">
           <form action = "." method = "POST">
             <fieldset>
+                <h3>Payment:</h3>
                 <div class="paybuttons">
-                  <label for = "credit card"> <input type = "radio" name = "pay" id = "credit" value = "c" required checked="checked">  <img src="./card-credit.png"> Credit card </label><br><br>
-                  <label for = "debit"><input type = "radio" name = "pay" id = "debt" value = "d" required>  <img src="./card-debit.png"> Debit card</label><br><br>
-                  <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required>  <img src="./ewallet.png"> e-Wallet</label><br><br>
+                  <label for = "credit card"><input type = "radio" name = "pay" id = "cc" value = "cc" required onclick="credit()">  <img src="./card-credit.png"> Credit card </label><br><br>
+                  <label for = "debit"><input type = "radio" name = "pay" id = "dc" value = "dc" required onclick="debit()">  <img src="./card-debit.png"> Debit card</label><br><br>
+                  <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required onclick="ewallet()">  <img src="./ewallet.png"> e-Wallet</label><br><br>
                 </div>
+                <div class="cardinfo" id="cardinfo"></div>
                 <br>
                 <div class="ordernow">
-                  US$ 000.00 <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW">
+                <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW">
                 </div>
                 <br>
-
             </fieldset>
         </form>
         </div>
       </div>
-      
     </section>
 
     <div id="footer"></div>
-    
+    <script src="../js/form.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/game-header.js"></script>
     <script src="../js/game-footer.js"></script>
