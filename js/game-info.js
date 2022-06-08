@@ -7,6 +7,7 @@ function showinfo(){
     .then((data) => {
         for (i = 0; i < data.length; i++){
             if(data[i]._id.$oid ==  idgame){
+                console.log(data[i]._id.$oid);
                 document.getElementById('game-inf').innerHTML = '' +
                 '<div id="game_head">'+
                     '<div id="game_img"><img src=".' + data[i].Image + '" alt="'+ data[i].name  +'"></div>' +
@@ -14,7 +15,7 @@ function showinfo(){
                     '<div id="game_price">US$ ' + data[i].price + '</div>' +
                     '<div id="btns">' + 
                         '<button id="buy" onclick="location.href=`../checkout/payment.html?id='+data[i]._id.$oid+'`">Buy Now</button><br>' +
-                        '<button id="cart">Add to Cart</button>' +
+                        '<button id="cart" onclick="addgame(`'+data[i]._id.$oid+'`)">Add to Cart</button>' +
                     '</div>'+
                 '</div>' +
                 '<div id="pagebody">'+
