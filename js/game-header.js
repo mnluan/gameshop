@@ -10,7 +10,7 @@ function createHeader(){
         '</div>' +
         '<div id="menu-bar"></div>' +
         '<nav class="navbar">' +
-          '<a class="cart-menu" href="#"><img src="../img/cart.png" alt="cart"> <div class="count" id="count"></div></a>' +
+          '<a class="cart-menu" href="../cart/cartview.html"><img src="../img/cart.png" alt="cart"></a><div class="count" id="count"></div>' +
         '</nav>' +
     '</header>' + 
     '<section class="search_result" id="search_result">' +

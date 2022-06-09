@@ -8,7 +8,26 @@
     <title>Game Shop</title>
 </head>
   <body>
-    <div id="header"></div>
+
+    <header>
+      <a href="../index.html" class="logo"><img src="../img/logo.png" alt="logo"></a>
+      <div id="homebar">
+        <form>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <input type="search" id="searchbar" placeholder="Search..." onkeydown="autoSearch()">
+        </form>
+      </div>
+      <div id="menu-bar"></div>
+      <nav class="navbar">
+        <a class="cart-menu" href="../cart/cartview.html"><img src="../img/cart.png" alt="cart"><div class="count" id="count"></div></a>
+      </nav>
+    </header>
+
+    <section class="search_result" id="search_result">
+      <button onclick="closebtn()"><b>X</b></button>
+      <div id="result"></div>
+    </section>
+    
     <section id="home" class="home"></section>
     <section id="game-inf" class="game-inf"></section>
     <section id="game-sub" class="game-sub"></section>
@@ -16,7 +35,6 @@
     
     <script src="../js/addcart.js"></script>
     <script src="../js/search.js"></script>
-    <script src="../js/game-header.js"></script>
     <script src="../js/game-footer.js"></script>
     <script src="../js/game-info.js"></script>
   </body>

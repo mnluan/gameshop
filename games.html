@@ -7,7 +7,28 @@
     <title>Game Shop</title>
 </head>
 <body>
-  <div id="header"></div>
+  <header>
+    <a href="#home" class="logo"><img src="./img/logo.png" alt="logo"></a>
+    <div id="homebar">
+      <form>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <input type="search" id="searchbar" placeholder="Search..." onkeydown="autoSearch()">
+      </form>
+    </div>
+      <div id="menu-bar"></div>
+      <nav class="navbar">
+        <a href="#home" data-replace="Home"><span>Home</span></a>
+        <a href="#categories" data-replace="Categories"><span>Categories</span></a>
+        <a href="#popular" data-replace="Popular"><span>Popular</span></a>
+        <a class="cart-menu" href="./cart/cartview.html"><img src="./img/cart.png" alt="cart"><div class="count" id="count"></div></a>
+      </nav>
+  </header>
+
+  <section class="search_result" id="search_result">
+    <button onclick="closebtn()"><b>X</b></button>
+    <div id="result">
+    </div>
+  </section>
     
   <section id="home" class="home"></section>
 
@@ -18,7 +39,6 @@
   <div id="footer"></div>
   <script src="./js/addcart.js"></script>
   <script src="./js/search.js"></script>
-  <script src="./js/header.js"></script>
   <script src="./js/footer.js"></script>
   <script src="./js/list.js"></script>
 </body>
