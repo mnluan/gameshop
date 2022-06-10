@@ -18,16 +18,28 @@ function countgames(){
 function addgame(id){
   var gameid = id;
   var cart = JSON.parse(localStorage.getItem("id"));
-
+  var cond = false;
   if(cart == null ){
     localStorage.setItem("id", "[]");
   }
 
-  var cod = {id: gameid}
-  cart.push(cod);
-  localStorage.setItem("id", JSON.stringify(cart));
-  countgames();
-  alert("Game added in cart!");
+  var allgames = JSON.parse(localStorage.getItem("id"));
+  for (i = 0; i < allgames.length; i++){
+      if(allgames[i].id == id){
+        alert("This game is already in cart!");
+        cond = true;
+        break;
+      }
+  }
+
+  if(cond == false){
+    var cod = {id: gameid}
+    cart.push(cod);
+    localStorage.setItem("id", JSON.stringify(cart));
+    countgames();
+    alert("Game added in cart!");
+  }
+
 }
 
 createcart();
