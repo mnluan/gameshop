@@ -882,12 +882,40 @@ input[type=submit]:hover{
   cursor: pointer;
   color: #54b3d6;
   background-color: #050b1869;
+  padding: 15px;
+  margin-right: 25px;
   transition: .8s;
 }
 
 #item button:hover{
   color: white;
   background-color: #912424;
+}
+#ordernow{
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-size: 42px;
+}
+
+#total{
+  margin-right: 20px;
+}
+
+#ordernow button{
+  color: white;
+  cursor: pointer;
+  background-color: #09f;
+  font-size: 22px;
+  width: 150px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: .8s;
+}
+#ordernow button:hover{
+  background-color: green;
 }
 /*End Cartview page*/
 

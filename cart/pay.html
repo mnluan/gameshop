@@ -42,14 +42,15 @@
             <fieldset>
                 <h3>Payment:</h3>
                 <div class="paybuttons">
-                  <label for = "credit card"><input type = "radio" name = "pay" id = "cc" value = "cc" required onclick="credit()">  <img src="./card-credit.png"> Credit card </label><br><br>
-                  <label for = "debit"><input type = "radio" name = "pay" id = "dc" value = "dc" required onclick="debit()">  <img src="./card-debit.png"> Debit card</label><br><br>
-                  <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required onclick="ewallet()">  <img src="./ewallet.png"> e-Wallet</label><br><br>
+                  <label for = "credit card"><input type = "radio" name = "pay" id = "cc" value = "cc" required onclick="credit()">  <img src="../checkout/card-credit.png"> Credit card </label><br><br>
+                  <label for = "debit"><input type = "radio" name = "pay" id = "dc" value = "dc" required onclick="debit()">  <img src="../checkout/card-debit.png"> Debit card</label><br><br>
+                  <label for = "ewallet"><input type = "radio" name = "pay" id = "other" value = "o" required onclick="ewallet()">  <img src="../checkout/ewallet.png"> e-Wallet</label><br><br>
                 </div>
                 <div class="cardinfo" id="cardinfo"></div>
                 <br>
                 <div class="ordernow">
-                <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW">
+                  <div id="ordernow" class="ordernow"></div>
+                  <input type = "submit" id = "submit" name = "submit" value="PAY FOR YOUR ORDER NOW" onclick="clearcart()">
                 </div>
                 <br>
             </fieldset>
@@ -60,7 +61,7 @@
 
     <div id="footer"></div>
     <script src="../js/addcart.js"></script>
-    <script src="../js/form.js"></script>
+    <script src="../js/form2.js"></script>
     <script src="../js/search.js"></script>
     <script src="../js/game-footer.js"></script>
     <script src="../js/game-info.js"></script>

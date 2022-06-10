@@ -17,7 +17,6 @@ function removeItem(k){
 function cartview(){
     var cart_number = JSON.parse(localStorage.getItem("id"));
     var cart_number = cart_number.length;
-    var total = 0;
     if (cart_number < 1){
         document.getElementById('allitems').innerHTML = '<div>'+
         '<div id="img_info"><img src="../img/empty-cart.png" alt="cart_empty"></img></div>'+
@@ -25,6 +24,7 @@ function cartview(){
         '</div>';
     }else{
         document.getElementById('allitems').innerHTML = '<div id="clear"> <button onclick="clearcart();"> Clear Cart </button>'
+        var total = 0;
         var item = JSON.parse(localStorage.getItem("id"));
             item.forEach(game => {
                 fetch(`https://mnluan.github.io/gameshop/db/games.json`)
@@ -41,12 +41,16 @@ function cartview(){
                                 '<div id="cart-game-name" class="order-game-name">' + data[j].name.toUpperCase() + '</div>'+
                                 '<div id="order-game-price" class="order-game-price">US$ ' + data[j].price + '</div>' +
                             '</div>'+
-                        '</div><br>'
+                        '</div><br>';
+                        
                     }
+                    console.log(total);
+                    document.getElementById('ordernow').innerHTML = '<div id="total">US$ ' +total+ ' </div><button onclick="location.href=`./pay.html`">Order Now</button>';
                 }
             
             });
         })
+        
     }
 }
 
