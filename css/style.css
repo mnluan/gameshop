@@ -821,6 +821,24 @@ input[type=submit]:hover{
 /*End Payment*/
 
 /*Cartview page*/
+#clear{
+  padding: 20px;
+}
+
+#clear button{
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border:none;
+  background-color: #050b1869;
+  color: white;
+  transition: .8s;
+}
+
+#clear button:hover{
+  background-color: #912424;
+}
+
 #allitems{
   color: white;
   padding: 10px;
@@ -839,6 +857,38 @@ input[type=submit]:hover{
   font-size: 25px;
 }
 
+#item{
+  display: flex;
+  flex-direction: row;
+  background-color: #050b1869;
+  border-radius: 10px;
+  transition: .8s;
+}
+
+#item:hover{
+  background-color: #54b3d6;
+}
+
+#cart-cover img{
+  width: 90px;
+  border-radius: 100%;
+}
+
+#item button{
+  border: none;
+  height: 90px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+  color: #54b3d6;
+  background-color: #050b1869;
+  transition: .8s;
+}
+
+#item button:hover{
+  color: white;
+  background-color: #912424;
+}
 /*End Cartview page*/
 
 /* responsiveness */
