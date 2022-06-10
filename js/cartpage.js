@@ -4,7 +4,14 @@ function clearcart(){
 }
 
 function removeItem(k){
-    console.log(k)
+    var allgames = JSON.parse(localStorage.getItem("id"));
+    for (i = 0; i < allgames.length; i++){
+        if(allgames[i].id == k){
+            allgames.splice(i, 1);
+            localStorage.setItem("id", JSON.stringify(allgames));
+            document.location.reload(true);
+        }
+    }
 }
 
 function cartview(){

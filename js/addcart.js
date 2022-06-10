@@ -30,9 +30,5 @@ function addgame(id){
   alert("Game added in cart!");
 }
 
-function removegame(){
-/* cart.splice(3,1) apaga do vetor cart o item de indice 3 (somente ele!) */
-}
-
 createcart();
 countgames();
