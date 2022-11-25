@@ -6,7 +6,7 @@ setInterval( ()=>{
 }, 5000);
 
 function nextInfo(){
-    fetch(`https://mnluan.github.io/gameshop/db/games.json`)
+    fetch(`./db/games.json`)
     .then((res) => res.json())
     .then((data) => {
 

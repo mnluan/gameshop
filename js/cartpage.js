@@ -27,7 +27,7 @@ function cartview(){
         var total = 0;
         var item = JSON.parse(localStorage.getItem("id"));
             item.forEach(game => {
-                fetch(`https://mnluan.github.io/gameshop/db/games.json`)
+                fetch(`../db/games.json`)
                 .then((res) => res.json())
                 .then((data) => {
                 for (j = 0; j < data.length; j++){

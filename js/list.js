@@ -10,7 +10,7 @@ function createHTML(i, d){
 }
 
 function listgames(){
-fetch(`https://mnluan.github.io/gameshop/db/games.json`)
+fetch(`./db/games.json`)
 .then((res) => res.json())
 .then((data) => {
     if(nameURL == "all"){

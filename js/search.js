@@ -12,7 +12,7 @@ function autoSearch(){
     list = "";
   }else{
     var list = "";
-    fetch(`https://mnluan.github.io/gameshop/db/games.json`)
+    fetch(`./db/games.json`)
       .then((res) => res.json())
       .then((data) => {
         for (i = 0; i < data.length; i++){
@@ -22,7 +22,7 @@ function autoSearch(){
             document.getElementById('result').innerHTML = "";
             var url = data[i]._id.$oid;
             list += data[i].name;
-            document.getElementById('result').innerHTML += '<div><a href="https://mnluan.github.io/gameshop/game/app.html?id=' + url + '">'+ data[i].name +'</a></div>';;
+            document.getElementById('result').innerHTML += '<div><a href="./game/app.html?id=' + url + '">'+ data[i].name +'</a></div>';;
           }
         }
       });

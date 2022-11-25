@@ -2,7 +2,7 @@ function showinfo(){
     let params = new URLSearchParams(location.search);
     var idgame = params.get('id');
 
-    fetch(`https://mnluan.github.io/gameshop/db/games.json`)
+    fetch(`../db/games.json`)
     .then((res) => res.json())
     .then((data) => {
         for (i = 0; i < data.length; i++){
